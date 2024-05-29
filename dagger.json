@@ -1,0 +1,12 @@
+{
+  "name": "app",
+  "sdk": "go",
+  "dependencies": [
+    {
+      "name": "golang",
+      "source": "github.com/mycroft/go-dagger-ci/golang@f039c63ee3ed83d52254673a83f508398bc422ea"
+    }
+  ],
+  "source": "ci",
+  "engineVersion": "v0.11.4"
+}

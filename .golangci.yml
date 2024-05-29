@@ -1,0 +1,25 @@
+# See https://gist.github.com/maratori/47a4d00457a92aa426dbd48a18776322
+issues:  
+  exclude-files:
+    - ci/
+
+linters:
+  disable-all: true
+  enable:
+  - errcheck
+  - govet
+  - gosimple
+  - godot
+  - godox
+  - revive
+
+linters-settings:
+  revive:
+    ignore-generated-header: true
+    severity: warning
+    rules:
+      - name: line-length-limit
+        severity: error
+        arguments: [80]
+      - name: package-comments
+        severity: error
